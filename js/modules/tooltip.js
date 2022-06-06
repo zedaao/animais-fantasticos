@@ -39,3 +39,5 @@ export default function inittoolTip() {
     item.addEventListener("mouseover", onMouseOver);
   });
 }
+
+console.log("teste");
