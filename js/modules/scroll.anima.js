@@ -1,9 +1,9 @@
 export default class ScrollAnima {
-  cosntructor(sections) {
+  constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.windowMetade = window.innerHeight * 0.6;
 
-    this.checkDistance = this.animaScroll.bind(this);
+    this.checkDistance = this.checkDistance.bind(this);
   }
 
   getDistance() {
