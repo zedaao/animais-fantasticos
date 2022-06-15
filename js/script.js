@@ -3,12 +3,12 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tab-animacao.js";
 import Modal from "./modules/modal.js";
 import ToolTip from "./modules/tooltip.js";
-import initDropdownMenu from "./modules/dropdpwm-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initFuncionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import initAnimacao from "./modules/scroll-animacao.js";
+import DropdownMenu from "./modules/dropdpwm-menu.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -32,7 +32,9 @@ modal.init();
 const toolTip = new ToolTip("[data-tooltip]");
 toolTip.init();
 
-initDropdownMenu();
+const dropdownMenus = new DropdownMenu("[data-dropdown]");
+dropdownMenus.init();
+
 initMenuMobile();
 initFuncionamento();
 initAnimacao();
